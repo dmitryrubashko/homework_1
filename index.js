@@ -118,4 +118,22 @@ const getCorrectedWord2 = (str) => {
 
 console.log(getCorrectedWord2('javaScript'));
 
+// task_9 
+
+const getNewString1 = function (str, n) {
+    if (typeof str !== 'string' || typeof n !== 'number') return 'Enter correct values';
+    else if (str.length > n) return str.substr(0, n) + '...';
+    return str;
+}
+
+console.log (getNewString1('Привет мир!', 6));
+
+const getNewString2 = (str, n) => {
+    if (typeof str !== 'string' || typeof n !== 'number') return 'Enter correct values';
+    else if (str.length > n) return str.substr(0, n) + '...';
+    return str;
+}
+
+console.log (getNewString2('Привет мир!', 11));
+
 
